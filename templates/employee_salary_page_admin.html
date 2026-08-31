@@ -1,0 +1,46 @@
+{% extends "admin_home.html" %}
+
+{% block main %}
+<div class="center-tag py-3">
+<h1> Employee Payroll Sheet</h1>
+</div>
+<div class="table-wrapper py-3">
+    <table class="table table-bordered center-tag" id="emp-table">
+        <tr class="table-primary">
+            <td> Employee ID </td>
+            <td> Name </td>
+            <td> CTC Salary </td>
+            <td> Basic </td>
+            <td> HRA </td>
+            <td> Other </td>
+            <td> PF </td>
+            <td> PF Emp_share </td>
+            <td> Earning </td>
+            <td> Professional Tax </td>
+            <td> Take Home </td>
+        </tr>
+        {% for employee in employees_data %}
+        <tr>
+            <td> {{ employee['emp_id'] }}</td>
+            <td> {{ employee['emp_name'] }}</td>
+            <td> {{ employee['ctc_salary'] }} </td>
+            <td>  {{ employee['ctc_salary'] * 0.6 }} </td>
+            <td> {{ 0.4 * (employee['ctc_salary'] * 0.6) }} </td>
+            <td> {{ employee['ctc_salary'] - (employee['ctc_salary'] * 0.6) - (0.4 * (employee['ctc_salary'] * 0.6)) - 1800 }}</td>
+            <td> 1800 </td>
+            <td> -1800 </td>
+            <td> {{employee['ctc_salary'] * 0.6 + 0.4 * (employee['ctc_salary'] * 0.6) + employee['ctc_salary'] - (employee['ctc_salary'] * 0.6) - (0.4 * (employee['ctc_salary'] * 0.6)) - 1800 }} </td>
+            <td> -200 </td>
+            <td> {{ (employee['ctc_salary'] * 0.6) + (0.4 * (employee['ctc_salary'] * 0.6)) + (employee['ctc_salary'] - (employee['ctc_salary'] * 0.6) - (0.4 * (employee['ctc_salary'] * 0.6)) - 1800) - 2000}}</td>
+        </tr>
+        {% endfor %}
+        <tr class="table-success text-success fw-bold">
+            <td colspan="7" class="text-success"> Total Salary Expenditure (CTC SALARY) </td>
+            <td colspan="4" class="text-success"> {{ total_salary[0]['ts'] }} </td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}
+
+

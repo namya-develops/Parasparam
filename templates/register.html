@@ -1,0 +1,38 @@
+{% extends "admin_home.html" %}
+
+{% block main %}
+
+<div id="reg-emp-frm">
+    <h1 class="add_emp_head py-4"> Add an employee </h1>
+    <div class="frm-table">
+        <form action="/admin/register_employee" method="post">
+            <table id="reg-frm-table" cellpadding="10rem" cellspacing = "4rem">
+                <tr>
+                    <td> Name of Employee: </td>
+                    <td><input type="text" name="name" placeholder="Name"> </td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="text" name="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td>CTC Salary: </td>
+                    <td><input type = "number" name="ctc_salary" placeholder="Enter CTC per month"></td>
+                </tr>
+                <tr>
+                    <td>Designation: </td>
+                    <td><input type = "text" name="designation" placeholder="Enter designation"></td>
+                </tr>
+                <tr>
+                    <td>Date of joining: </td>
+                    <td><input type = "date" name="joining_date" placeholder="Enter CTC per month"></td>
+                </tr>
+            </table>
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

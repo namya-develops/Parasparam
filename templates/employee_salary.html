@@ -1,0 +1,67 @@
+{% extends "employee_home.html" %}
+
+{% block main %}
+<div class="salary_details_head center py-4">
+    <h1> Salary Details </h1>
+</div>
+<div class="employee_salary_table_container center">
+    <table class="table table-bordered" id="employee_salary_table">
+        <thead>
+            <tr class="table-secondary">
+                <th scope="col">Sr. No.</th>
+                <th scope="col"> Particulars </th>
+                <th scope="col">Amount (in INR) </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for particular in emp_data %}
+            <tr>
+                <td>1.</td>
+                <th scope="row">Basic</th>
+                <td> {{ particular['ctc_salary'] * 0.6 }} </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <th scope="row">HRA</th>
+                <td> {{ 0.4 * (particular['ctc_salary'] * 0.6) }} </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <th scope="row">Other</th>
+                <td colspan="2">{{ particular['ctc_salary'] - (particular['ctc_salary'] * 0.6) - (0.4 *
+                    (particular['ctc_salary'] * 0.6)) - 1800 }}</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <th scope="row">PF</th>
+                <td colspan="2">1800</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <th scope="row">PF Emp_share</th>
+                <td colspan="2">-1800</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <th scope="row">Earning</th>
+                <td colspan="2">{{particular['ctc_salary'] * 0.6 + 0.4 * (particular['ctc_salary'] * 0.6) +
+                    particular['ctc_salary'] - (particular['ctc_salary'] * 0.6) - (0.4 * (particular['ctc_salary'] *
+                    0.6)) - 1800 }}</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <th scope="row">Professional Tax</th>
+                <td colspan="2">-200</td>
+            </tr>
+            <tr>
+                <td class="table-info">8.</td>
+                <th scope="row" class="table-info">Take Home</th>
+                <td colspan="2" class="table-info">{{ (particular['ctc_salary'] * 0.6) + (0.4 *
+                    (particular['ctc_salary'] * 0.6)) + (particular['ctc_salary'] - (particular['ctc_salary'] * 0.6) -
+                    (0.4 * (particular['ctc_salary'] * 0.6)) - 1800) - 2000}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "admin_home.html" %}
+
+{% block main %}
+
+<h1 class="add_emp_head py-4 center"> Admins </h1>
+
+<div class="table-wrapper">
+    <table class="table table-bordered center-tag" id="emp-table">
+        <tr class="table-primary">
+            <td> Admin ID </td>
+            <td> Name </td>
+            <td> Actions </td>
+        </tr>
+        {% for admin in admins %}
+        <tr>
+            <td> {{ admin['adm_id'] }}</td>
+            <td> {{ admin['adm_name'] }}</td>
+            <td>
+                <button class="btn btn-danger btn-lg">
+                    <a class="link" id="dereg-emp-btn" href="/admin/dereg_admin/{{admin['adm_id']}}"> - Deregister </a>
+                </button>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+
+<div id="reg-emp-frm">
+    <h1 class="add_emp_head py-4"> Add an Admin </h1>
+    <div class="frm-table">
+        <form action="/admin/actions/register_admin" method="post">
+            <table id="reg-frm-table" cellpadding="10rem" cellspacing="4rem">
+                <tr>
+                    <td> Name of New Admin: </td>
+                    <td><input type="text" name="adm_name" placeholder="Name"> </td>
+                </tr>
+                <tr>
+                    <td>Enter password for new admin: </td>
+                    <td><input type="text" name="adm_password" placeholder="Password"></td>
+                </tr>
+            </table>
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <h1 class="title py-4"> Leave Applications </h1>
+
+    <div class="table-wrapper">
+        <table class="table table-bordered center-tag" id="emp-table">
+            <tr class="table-primary fw-bold">
+                <td> Employee ID </td>
+                <td> From </td>
+                <td> To </td>
+                <td> Reason </td>
+                <td> Accept/Reject </td>
+            </tr>
+            {% for leave in leave_data %}
+            <tr>
+                <td> {{ leave['emp_id'] }} </td>
+                <td> {{ leave['from_date'] }} </td>
+                <td> {{ leave['to_date'] }} </td>
+                <td> {{ leave['reason'] }} </td>
+                <td>
+                    <button class="btn btn-success btn-lg">
+                        <a id="view-emp-btn" class="link" href="/admin/actions/leaves/accept/{{ leave['leave_id'] }}"> <i class="fa-solid fa-check"></i> Accept </a>
+                    </button>
+                    <button class="btn btn-danger btn-lg">
+                        <a id="view-emp-btn" class="link" href="/admin/actions/leaves/reject/{{ leave['leave_id']}}"> <i class="fa-solid fa-xmark"></i> Reject </a>
+                    </button>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br>
+    </div>
+</div>
+
+{% endblock %}

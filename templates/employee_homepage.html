@@ -1,0 +1,103 @@
+{% extends "employee_home.html" %}
+
+{% block main %}
+<div class="welcome py-3">
+    <h1 id="welcome_tag"> Welcome, {{ user_emp_name }} </h1>
+</div>
+
+<div class="emp-home-content">
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0 ">
+            <div class="card emp-me-cards emp-me-project-card">
+                <div class="card-body">
+                    <div class="icon center">
+                    <i class="fa-solid fa-briefcase card-icon fa-2xl"></i>
+                    </div>
+                    <br>
+                    <h5 class="card-title">My Projects</h5>
+                    <ul>
+                            <li> Assigned: {{ project_data[0]['pd'] }} </li>
+                            <li> Completed: {{ completed_projects[0]['cp'] }} </li>
+                            <li> In-Progress: {{ inprogress_projects[0]['ip'] }} </li>
+                            <li> Planning Stage: {{ planning_stage_projects[0]['psp'] }} </li>
+                    </ul>
+                    <div class="center"><a href="/user/projects" class="btn btn-primary">
+                        <i class="fa-solid fa-folder-open"></i> View Projects
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card emp-me-cards emp-me-salary-card">
+            <div class="card-body">
+                    <div class="icon center">
+                    <i class="fa-solid fa-bell card-icon fa-2xl"></i>
+                    </div>
+                    <br>
+                    <h5 class="card-title"> Notifications </h5>
+                
+                
+                {% if notifications %}
+                
+                {% for notification in notifications %}
+                
+                        <div class="border-bottom py-2">
+                            <div class="d-flex justify-content-between">
+                                <strong>{{ notification["title"] }}</strong>
+                                
+                                {% if notification["is_read"] == 0 %}
+                                    <span class="badge bg-primary">New</span>
+                                {% endif %}
+                            </div>
+                            
+                            <small class="text-muted d-block">
+                                {{ notification["message"] }}
+                            </small>
+                            
+                            <small class="text-secondary">
+                                {{ notification["created_at"] }}
+                            </small>
+
+                        </div>
+                        
+                        {% endfor %}
+                        
+                        {% else %}
+
+                    <div class="text-center text-muted mt-4">
+                        <h6>No Notifications 🎉</h6>    
+                        <small>You're all caught up.</small>
+                    </div>
+
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0 ">
+            <div class="card emp-me-cards emp-me-attendance-card">
+                <div class="card-body">
+                    <div class="icon center">
+                        <i class="fa-solid fa-calendar-days card-icon fa-2xl"></i>
+                    </div>
+                    <br>
+                    <h5 class="card-title"> Manage Leaves </h5>
+                    <p class="card-text">
+                        Applied: {{ applied_leaves[0]['app_l'] }} <br>
+                        Accepted: {{ accepted_leaves[0]['acc_l'] }} <br>
+                        Rejected: {{ rejected_leaves[0]['rl'] }} <br>
+                        Pending: {{ pending_leaves[0]['pl'] }}
+                    </p>
+                    <div class="center"> <a href="/user/leave-application" class="btn btn-primary"> + Apply / View Applications </a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

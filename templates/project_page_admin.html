@@ -1,0 +1,72 @@
+{% extends "admin_home.html" %}
+
+{% block main %}
+
+<div class="center-tag py-3">
+    <h1> Current Projects </h1>
+</div>
+
+<div class="table-wrapper">
+    <table class="table table-bordered" id="emp-table">
+        <tr class="table-primary">
+            <td> Project ID </td>
+            <td> Project Name </td>
+            <td> Project Description </td>
+            <td> Assigned to: Employee ID </td>
+            <td> Project Status </td>
+            <td> Employee Remarks </td>
+        </tr>
+        {% for project in project_data %}
+        <tr>
+            <td> {{project['project_id']}} </td>
+            <td> {{project['project_name']}} </td>
+            <td> {{project['project_description']}} </td>
+            <td>
+               {{ project['emp_id'] }}
+            </td>
+            <td> {{ project['status'] }}</td>
+            <td> {{ project['emp_remarks'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="center-tag py-3">
+    <h1> Create a Project </h1>
+</div>
+
+<div id="reg-emp-frm">
+    <div class="frm-table">
+        <form action="/admin/projects" method="post">
+            <table id="reg-frm-table" cellpadding="10rem" cellspacing="4rem">
+                <tr>
+                    <td> Name of Project: </td>
+                    <td><input type="text" name="project_name" placeholder="Name"> </td>
+                </tr>
+                <tr>
+                    <td> Project Description: </td>
+                    <td><input type="text" name="project_description" placeholder="Description"> </td>
+                </tr>
+                <tr>
+                    <td>Assign the Project to: </td>
+                    <td>
+                        <select id="employees" name="employees">
+                            <option value="select_employee"> Select an employee</option>
+                            {% for employee in employees_data %}
+                            <option value="{{ employee['emp_id'] }}">
+                                {{ employee['emp_name'] }}
+                            </option>
+                            {% endfor %}
+
+                        </select>   
+                    </td>
+                </tr>
+            </table>
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="card-container">
+    <div class="card" id="reset">
+        <div class="card-body">
+            <h5 class="card-title">Reset Password</h5>
+            <div class="card-form">
+                <form action="/admin/reset_password" method="post">
+                    <div class="username">
+                        <label for="input_username">Admin ID</label>
+                        <input name="adm_id" type="text" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock" autocomplete="off">
+                    </div>
+                    <div class="password">
+                        <label for="inputPassword5">Password</label>
+                        <input name="adm_password" type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock" autocomplete="off">
+                    </div>
+                    <div class="password">
+                        <label for="inputPassword5">Confirm Password</label>
+                        <input name="adm_password_confirm" type="password" id="inputPassword5" class="form-control"
+                            aria-describedby="passwordHelpBlock" autocomplete="off">
+                    </div>
+                    <div class="card-links">
+                        <button type="submit" class="btn btn-dark"> Change Password </button>
+                        <a href="/admin/login" class="card-link"> Login </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="admin_login">
+        If looking for Admin Login, <a href="/admin/login"> Click here</a>
+    </div>
+</div>
+
+{% endblock %}

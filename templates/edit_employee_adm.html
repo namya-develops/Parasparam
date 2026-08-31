@@ -1,0 +1,36 @@
+{% extends "admin_home.html" %}
+
+{% block main %}
+
+<div id="reg-emp-frm">
+    <h1 class="add_emp_head py-4"> Edit employee details </h1>
+    <div class="frm-table">
+        {% for employee in emp_data %}
+        <form action="/admin/edit_employee/{{employee['emp_id']}}" method="post">
+            <table id="reg-frm-table" cellpadding="10rem" cellspacing = "4rem">
+                <tr>
+                    <td> Name of Employee: </td>
+                    <td><input type="text" name="name" value="{{ employee['emp_name']}}"> </td>
+                </tr>
+                <tr>
+                    <td>CTC Salary: </td>
+                    <td><input type = "number" name="ctc_salary" value="{{ employee['ctc_salary'] }}"></td>
+                </tr>
+                <tr>
+                    <td>Designation: </td>
+                    <td><input type = "text" name="designation" value="{{ employee['designation'] }}"></td>
+                </tr>
+                <tr>
+                    <td>Date of joining: </td>
+                    <td><input type = "date" name="joining_date" value="{{ employee['joining_date'] }}"></td>
+                </tr>
+                {% endfor %}
+            </table>
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

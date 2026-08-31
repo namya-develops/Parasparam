@@ -1,0 +1,32 @@
+{% extends "home_layout.html" %}
+
+{% block header %}
+<nav class="navbar bg-body-tertiary px-4 py-4" id="top-nav">
+
+    <div class="left">
+        <a class="navbar-brand brand-logo-main" href="#"> PARASPARAM </a>
+    </div>
+
+    <div class="center">
+        <div class="nav-links">
+            <a href="/user/home"> Me </a>
+            <a href="/user/salary">Salary</a>
+            <a href="/user/projects">Projects</a>
+            <a href="/user/attendance">Attendance</a>
+            <a href="/user/employees">Employees</a>
+        </div>
+    </div>
+
+    <div class="right">
+        <button class="btn btn-dark" id="logout-btn">
+            <a id="logout-link" href="/logout"> <i class="fa-solid fa-right-from-bracket"></i> Logout </a>
+        </button>
+    </div>
+
+</nav>
+{% endblock %}
+
+<main>
+{% block main %}
+{% endblock %}
+</main>

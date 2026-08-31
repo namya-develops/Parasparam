@@ -1,0 +1,31 @@
+{% extends "employee_home.html" %}
+
+{% block main %}
+<div class="view_emp_head center-tag py-4">
+    <h1> Employee Details</h1>
+</div>
+
+<div class="view_emp_body center">
+    <table class="frm-table">
+    {% for employee in emp_data %}
+    <tr>
+       <td> <h3> Employee ID: </h3> </td>
+       <td> <h3> {{ employee['emp_id'] }} </h3></td>
+    </tr>
+    <tr>
+        <td> <h3> Employee Name:  </h3> </td>
+        <td> <h3>  {{ employee['emp_name'] }} </h3> </td>
+    </tr>
+    <tr>
+        <td> <h3> Date of Joining: </h3> </td>
+        <td> <h3> {{ employee['joining_date'] }} </h3> </td>
+    </tr>
+    <tr>
+        <td> <h3> Designation: </h3> </td>
+        <td> <h3> {{ employee['designation'] }} </h3> </td>
+    </tr>
+    {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

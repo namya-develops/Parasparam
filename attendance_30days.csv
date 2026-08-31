@@ -1,0 +1,511 @@
+﻿emp_id,date,week_day,day_type,emp_name,in_time,out_time,wrk_hrs,status
+1,15-07-2026,Wednesday,working day,Namya Shah,10:00 AM,7:00 PM,09:00,regular
+1,16-07-2026,Thursday,working day,Namya Shah,,,,leave
+1,17-07-2026,Friday,working day,Namya Shah,10:00 AM,7:00 PM,09:00,regular
+1,18-07-2026,Saturday,holiday,Namya Shah,,,,holiday
+1,19-07-2026,Sunday,holiday,Namya Shah,,,,holiday
+1,20-07-2026,Monday,working day,Namya Shah,,,,leave
+1,21-07-2026,Tuesday,working day,Namya Shah,10:00 AM,3:00 PM,05:00,half
+1,22-07-2026,Wednesday,working day,Namya Shah,10:00 AM,3:00 PM,05:00,half
+1,23-07-2026,Thursday,working day,Namya Shah,10:30 AM,6:30 PM,08:00,early
+1,24-07-2026,Friday,working day,Namya Shah,10:45 AM,7:45 PM,09:00,late
+1,25-07-2026,Saturday,holiday,Namya Shah,,,,holiday
+1,26-07-2026,Sunday,holiday,Namya Shah,,,,holiday
+1,27-07-2026,Monday,working day,Namya Shah,10:30 AM,7:30 PM,09:00,regular
+1,28-07-2026,Tuesday,working day,Namya Shah,10:00 AM,7:00 PM,09:00,regular
+1,29-07-2026,Wednesday,working day,Namya Shah,10:00 AM,6:00 PM,08:00,early
+1,30-07-2026,Thursday,working day,Namya Shah,10:00 AM,7:00 PM,09:00,regular
+1,31-07-2026,Friday,working day,Namya Shah,10:00 AM,7:00 PM,09:00,regular
+1,01-08-2026,Saturday,holiday,Namya Shah,,,,holiday
+1,02-08-2026,Sunday,holiday,Namya Shah,,,,holiday
+1,03-08-2026,Monday,working day,Namya Shah,10:00 AM,3:00 PM,05:00,half
+1,04-08-2026,Tuesday,working day,Namya Shah,10:30 AM,3:30 PM,05:00,half
+1,05-08-2026,Wednesday,working day,Namya Shah,10:45 AM,7:45 PM,09:00,late
+1,06-08-2026,Thursday,working day,Namya Shah,10:15 AM,7:15 PM,09:00,regular
+1,07-08-2026,Friday,working day,Namya Shah,10:00 AM,8:00 PM,10:00,regular
+1,08-08-2026,Saturday,holiday,Namya Shah,,,,holiday
+1,09-08-2026,Sunday,holiday,Namya Shah,,,,holiday
+1,10-08-2026,Monday,working day,Namya Shah,10:00 AM,3:00 PM,05:00,half
+1,11-08-2026,Tuesday,working day,Namya Shah,10:15 AM,7:15 PM,09:00,regular
+1,12-08-2026,Wednesday,working day,Namya Shah,10:00 AM,7:00 PM,09:00,regular
+1,13-08-2026,Thursday,working day,Namya Shah,10:20 AM,7:20 PM,09:00,regular
+2,17-07-2026,Friday,working day,Chirag Shah,10:00 AM,7:00 PM,09:00,regular
+2,18-07-2026,Saturday,holiday,Chirag Shah,,,,holiday
+2,19-07-2026,Sunday,holiday,Chirag Shah,,,,holiday
+2,20-07-2026,Monday,working day,Chirag Shah,10:45 AM,3:45 PM,05:00,half
+2,21-07-2026,Tuesday,working day,Chirag Shah,10:00 AM,7:00 PM,09:00,regular
+2,22-07-2026,Wednesday,working day,Chirag Shah,10:15 AM,7:15 PM,09:00,regular
+2,23-07-2026,Thursday,working day,Chirag Shah,10:00 AM,7:00 PM,09:00,regular
+2,24-07-2026,Friday,working day,Chirag Shah,10:45 AM,3:45 PM,05:00,half
+2,25-07-2026,Saturday,holiday,Chirag Shah,,,,holiday
+2,26-07-2026,Sunday,holiday,Chirag Shah,,,,holiday
+2,27-07-2026,Monday,working day,Chirag Shah,10:00 AM,7:00 PM,09:00,regular
+2,28-07-2026,Tuesday,working day,Chirag Shah,10:15 AM,8:15 PM,10:00,regular
+2,29-07-2026,Wednesday,working day,Chirag Shah,10:45 AM,7:45 PM,09:00,late
+2,30-07-2026,Thursday,working day,Chirag Shah,10:00 AM,6:00 PM,08:00,early
+2,31-07-2026,Friday,working day,Chirag Shah,10:00 AM,8:00 PM,10:00,regular
+2,01-08-2026,Saturday,holiday,Chirag Shah,,,,holiday
+2,02-08-2026,Sunday,holiday,Chirag Shah,,,,holiday
+2,03-08-2026,Monday,working day,Chirag Shah,11:00 AM,9:00 PM,10:00,late
+2,04-08-2026,Tuesday,working day,Chirag Shah,10:15 AM,3:15 PM,05:00,half
+2,05-08-2026,Wednesday,working day,Chirag Shah,10:20 AM,8:20 PM,10:00,regular
+2,06-08-2026,Thursday,working day,Chirag Shah,10:00 AM,7:00 PM,09:00,regular
+2,07-08-2026,Friday,working day,Chirag Shah,10:00 AM,7:00 PM,09:00,regular
+2,08-08-2026,Saturday,holiday,Chirag Shah,,,,holiday
+2,09-08-2026,Sunday,holiday,Chirag Shah,,,,holiday
+2,10-08-2026,Monday,working day,Chirag Shah,10:00 AM,7:00 PM,09:00,regular
+2,11-08-2026,Tuesday,working day,Chirag Shah,10:00 AM,6:00 PM,08:00,early
+2,12-08-2026,Wednesday,working day,Chirag Shah,10:00 AM,7:00 PM,09:00,regular
+2,13-08-2026,Thursday,working day,Chirag Shah,10:00 AM,8:00 PM,10:00,regular
+2,14-08-2026,Friday,working day,Chirag Shah,10:20 AM,7:20 PM,09:00,regular
+2,15-08-2026,Saturday,holiday,Chirag Shah,,,,holiday
+3,25-07-2026,Saturday,holiday,Vaishali Shah,,,,holiday
+3,26-07-2026,Sunday,holiday,Vaishali Shah,,,,holiday
+3,27-07-2026,Monday,working day,Vaishali Shah,10:00 AM,7:00 PM,09:00,regular
+3,28-07-2026,Tuesday,working day,Vaishali Shah,10:30 AM,7:30 PM,09:00,regular
+3,29-07-2026,Wednesday,working day,Vaishali Shah,10:15 AM,7:15 PM,09:00,regular
+3,30-07-2026,Thursday,working day,Vaishali Shah,10:45 AM,7:45 PM,09:00,late
+3,31-07-2026,Friday,working day,Vaishali Shah,10:00 AM,7:00 PM,09:00,regular
+3,01-08-2026,Saturday,holiday,Vaishali Shah,,,,holiday
+3,02-08-2026,Sunday,holiday,Vaishali Shah,,,,holiday
+3,03-08-2026,Monday,working day,Vaishali Shah,10:00 AM,3:00 PM,05:00,half
+3,04-08-2026,Tuesday,working day,Vaishali Shah,10:00 AM,7:00 PM,09:00,regular
+3,05-08-2026,Wednesday,working day,Vaishali Shah,10:30 AM,3:30 PM,05:00,half
+3,06-08-2026,Thursday,working day,Vaishali Shah,,,,leave
+3,07-08-2026,Friday,working day,Vaishali Shah,10:00 AM,7:00 PM,09:00,regular
+3,08-08-2026,Saturday,holiday,Vaishali Shah,,,,holiday
+3,09-08-2026,Sunday,holiday,Vaishali Shah,,,,holiday
+3,10-08-2026,Monday,working day,Vaishali Shah,10:00 AM,7:00 PM,09:00,regular
+3,11-08-2026,Tuesday,working day,Vaishali Shah,10:00 AM,7:00 PM,09:00,regular
+3,12-08-2026,Wednesday,working day,Vaishali Shah,10:30 AM,7:30 PM,09:00,regular
+3,13-08-2026,Thursday,working day,Vaishali Shah,10:15 AM,7:15 PM,09:00,regular
+3,14-08-2026,Friday,working day,Vaishali Shah,10:15 AM,7:15 PM,09:00,regular
+3,15-08-2026,Saturday,holiday,Vaishali Shah,,,,holiday
+3,16-08-2026,Sunday,holiday,Vaishali Shah,,,,holiday
+3,17-08-2026,Monday,working day,Vaishali Shah,11:00 AM,8:00 PM,09:00,late
+3,18-08-2026,Tuesday,working day,Vaishali Shah,11:00 AM,7:00 PM,08:00,late
+3,19-08-2026,Wednesday,working day,Vaishali Shah,,,,leave
+3,20-08-2026,Thursday,working day,Vaishali Shah,10:20 AM,7:20 PM,09:00,regular
+3,21-08-2026,Friday,working day,Vaishali Shah,10:00 AM,7:00 PM,09:00,regular
+3,22-08-2026,Saturday,holiday,Vaishali Shah,,,,holiday
+3,23-08-2026,Sunday,holiday,Vaishali Shah,,,,holiday
+4,18-07-2026,Saturday,holiday,Kavyan Khatri,,,,holiday
+4,19-07-2026,Sunday,holiday,Kavyan Khatri,,,,holiday
+4,20-07-2026,Monday,working day,Kavyan Khatri,10:45 AM,7:45 PM,09:00,late
+4,21-07-2026,Tuesday,working day,Kavyan Khatri,10:00 AM,7:00 PM,09:00,regular
+4,22-07-2026,Wednesday,working day,Kavyan Khatri,10:00 AM,7:00 PM,09:00,regular
+4,23-07-2026,Thursday,working day,Kavyan Khatri,10:20 AM,7:20 PM,09:00,regular
+4,24-07-2026,Friday,working day,Kavyan Khatri,10:00 AM,7:00 PM,09:00,regular
+4,25-07-2026,Saturday,holiday,Kavyan Khatri,,,,holiday
+4,26-07-2026,Sunday,holiday,Kavyan Khatri,,,,holiday
+4,27-07-2026,Monday,working day,Kavyan Khatri,11:00 AM,8:00 PM,09:00,late
+4,28-07-2026,Tuesday,working day,Kavyan Khatri,10:15 AM,7:15 PM,09:00,regular
+4,29-07-2026,Wednesday,working day,Kavyan Khatri,,,,leave
+4,30-07-2026,Thursday,working day,Kavyan Khatri,,,,leave
+4,31-07-2026,Friday,working day,Kavyan Khatri,10:00 AM,6:00 PM,08:00,early
+4,01-08-2026,Saturday,holiday,Kavyan Khatri,,,,holiday
+4,02-08-2026,Sunday,holiday,Kavyan Khatri,,,,holiday
+4,03-08-2026,Monday,working day,Kavyan Khatri,10:00 AM,7:00 PM,09:00,regular
+4,04-08-2026,Tuesday,working day,Kavyan Khatri,10:00 AM,7:00 PM,09:00,regular
+4,05-08-2026,Wednesday,working day,Kavyan Khatri,10:00 AM,6:00 PM,08:00,early
+4,06-08-2026,Thursday,working day,Kavyan Khatri,10:00 AM,8:00 PM,10:00,regular
+4,07-08-2026,Friday,working day,Kavyan Khatri,10:30 AM,7:30 PM,09:00,regular
+4,08-08-2026,Saturday,holiday,Kavyan Khatri,,,,holiday
+4,09-08-2026,Sunday,holiday,Kavyan Khatri,,,,holiday
+4,10-08-2026,Monday,working day,Kavyan Khatri,10:45 AM,7:45 PM,09:00,late
+4,11-08-2026,Tuesday,working day,Kavyan Khatri,10:45 AM,6:45 PM,08:00,late
+4,12-08-2026,Wednesday,working day,Kavyan Khatri,11:00 AM,8:00 PM,09:00,late
+4,13-08-2026,Thursday,working day,Kavyan Khatri,10:00 AM,7:00 PM,09:00,regular
+4,14-08-2026,Friday,working day,Kavyan Khatri,10:00 AM,7:00 PM,09:00,regular
+4,15-08-2026,Saturday,holiday,Kavyan Khatri,,,,holiday
+4,16-08-2026,Sunday,holiday,Kavyan Khatri,,,,holiday
+5,31-07-2026,Friday,working day,Harsh Trivedi,10:00 AM,7:00 PM,09:00,regular
+5,01-08-2026,Saturday,holiday,Harsh Trivedi,,,,holiday
+5,02-08-2026,Sunday,holiday,Harsh Trivedi,,,,holiday
+5,03-08-2026,Monday,working day,Harsh Trivedi,10:00 AM,7:00 PM,09:00,regular
+5,04-08-2026,Tuesday,working day,Harsh Trivedi,10:00 AM,3:00 PM,05:00,half
+5,05-08-2026,Wednesday,working day,Harsh Trivedi,10:15 AM,7:15 PM,09:00,regular
+5,06-08-2026,Thursday,working day,Harsh Trivedi,10:30 AM,7:30 PM,09:00,regular
+5,07-08-2026,Friday,working day,Harsh Trivedi,10:00 AM,6:00 PM,08:00,early
+5,08-08-2026,Saturday,holiday,Harsh Trivedi,,,,holiday
+5,09-08-2026,Sunday,holiday,Harsh Trivedi,,,,holiday
+5,10-08-2026,Monday,working day,Harsh Trivedi,10:00 AM,3:00 PM,05:00,half
+5,11-08-2026,Tuesday,working day,Harsh Trivedi,10:45 AM,6:45 PM,08:00,late
+5,12-08-2026,Wednesday,working day,Harsh Trivedi,10:00 AM,7:00 PM,09:00,regular
+5,13-08-2026,Thursday,working day,Harsh Trivedi,10:00 AM,3:00 PM,05:00,half
+5,14-08-2026,Friday,working day,Harsh Trivedi,10:20 AM,8:20 PM,10:00,regular
+5,15-08-2026,Saturday,holiday,Harsh Trivedi,,,,holiday
+5,16-08-2026,Sunday,holiday,Harsh Trivedi,,,,holiday
+5,17-08-2026,Monday,working day,Harsh Trivedi,10:00 AM,7:00 PM,09:00,regular
+5,18-08-2026,Tuesday,working day,Harsh Trivedi,10:00 AM,7:00 PM,09:00,regular
+5,19-08-2026,Wednesday,working day,Harsh Trivedi,10:15 AM,7:15 PM,09:00,regular
+5,20-08-2026,Thursday,working day,Harsh Trivedi,10:20 AM,7:20 PM,09:00,regular
+5,21-08-2026,Friday,working day,Harsh Trivedi,10:20 AM,6:20 PM,08:00,early
+5,22-08-2026,Saturday,holiday,Harsh Trivedi,,,,holiday
+5,23-08-2026,Sunday,holiday,Harsh Trivedi,,,,holiday
+5,24-08-2026,Monday,working day,Harsh Trivedi,10:20 AM,3:20 PM,05:00,half
+5,25-08-2026,Tuesday,working day,Harsh Trivedi,10:00 AM,7:00 PM,09:00,regular
+5,26-08-2026,Wednesday,working day,Harsh Trivedi,10:00 AM,6:00 PM,08:00,early
+5,27-08-2026,Thursday,working day,Harsh Trivedi,11:00 AM,7:00 PM,08:00,late
+5,28-08-2026,Friday,working day,Harsh Trivedi,10:45 AM,7:45 PM,09:00,late
+5,29-08-2026,Saturday,holiday,Harsh Trivedi,,,,holiday
+6,02-08-2026,Sunday,holiday,Aditya Patel,,,,holiday
+6,03-08-2026,Monday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,04-08-2026,Tuesday,working day,Aditya Patel,,,,leave
+6,05-08-2026,Wednesday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,06-08-2026,Thursday,working day,Aditya Patel,10:20 AM,3:20 PM,05:00,half
+6,07-08-2026,Friday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,08-08-2026,Saturday,holiday,Aditya Patel,,,,holiday
+6,09-08-2026,Sunday,holiday,Aditya Patel,,,,holiday
+6,10-08-2026,Monday,working day,Aditya Patel,10:20 AM,7:20 PM,09:00,regular
+6,11-08-2026,Tuesday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,12-08-2026,Wednesday,working day,Aditya Patel,10:15 AM,7:15 PM,09:00,regular
+6,13-08-2026,Thursday,working day,Aditya Patel,10:20 AM,7:20 PM,09:00,regular
+6,14-08-2026,Friday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,15-08-2026,Saturday,holiday,Aditya Patel,,,,holiday
+6,16-08-2026,Sunday,holiday,Aditya Patel,,,,holiday
+6,17-08-2026,Monday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,18-08-2026,Tuesday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,19-08-2026,Wednesday,working day,Aditya Patel,10:45 AM,8:45 PM,10:00,late
+6,20-08-2026,Thursday,working day,Aditya Patel,10:45 AM,7:45 PM,09:00,late
+6,21-08-2026,Friday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,22-08-2026,Saturday,holiday,Aditya Patel,,,,holiday
+6,23-08-2026,Sunday,holiday,Aditya Patel,,,,holiday
+6,24-08-2026,Monday,working day,Aditya Patel,10:00 AM,6:00 PM,08:00,early
+6,25-08-2026,Tuesday,working day,Aditya Patel,10:15 AM,8:15 PM,10:00,regular
+6,26-08-2026,Wednesday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,27-08-2026,Thursday,working day,Aditya Patel,10:45 AM,7:45 PM,09:00,late
+6,28-08-2026,Friday,working day,Aditya Patel,10:00 AM,7:00 PM,09:00,regular
+6,29-08-2026,Saturday,holiday,Aditya Patel,,,,holiday
+6,30-08-2026,Sunday,holiday,Aditya Patel,,,,holiday
+6,31-08-2026,Monday,working day,Aditya Patel,10:00 AM,6:00 PM,08:00,early
+7,22-08-2026,Saturday,holiday,Hitarth Shah,,,,holiday
+7,23-08-2026,Sunday,holiday,Hitarth Shah,,,,holiday
+7,24-08-2026,Monday,working day,Hitarth Shah,11:00 AM,8:00 PM,09:00,late
+7,25-08-2026,Tuesday,working day,Hitarth Shah,10:15 AM,7:15 PM,09:00,regular
+7,26-08-2026,Wednesday,working day,Hitarth Shah,,,,leave
+7,27-08-2026,Thursday,working day,Hitarth Shah,10:30 AM,8:30 PM,10:00,regular
+7,28-08-2026,Friday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,29-08-2026,Saturday,holiday,Hitarth Shah,,,,holiday
+7,30-08-2026,Sunday,holiday,Hitarth Shah,,,,holiday
+7,31-08-2026,Monday,working day,Hitarth Shah,10:00 AM,3:00 PM,05:00,half
+7,01-09-2026,Tuesday,working day,Hitarth Shah,10:00 AM,8:00 PM,10:00,regular
+7,02-09-2026,Wednesday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,03-09-2026,Thursday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,04-09-2026,Friday,working day,Hitarth Shah,10:20 AM,7:20 PM,09:00,regular
+7,05-09-2026,Saturday,holiday,Hitarth Shah,,,,holiday
+7,06-09-2026,Sunday,holiday,Hitarth Shah,,,,holiday
+7,07-09-2026,Monday,working day,Hitarth Shah,10:00 AM,8:00 PM,10:00,regular
+7,08-09-2026,Tuesday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,09-09-2026,Wednesday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,10-09-2026,Thursday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,11-09-2026,Friday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,12-09-2026,Saturday,holiday,Hitarth Shah,,,,holiday
+7,13-09-2026,Sunday,holiday,Hitarth Shah,,,,holiday
+7,14-09-2026,Monday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,15-09-2026,Tuesday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,16-09-2026,Wednesday,working day,Hitarth Shah,,,,leave
+7,17-09-2026,Thursday,working day,Hitarth Shah,10:00 AM,7:00 PM,09:00,regular
+7,18-09-2026,Friday,working day,Hitarth Shah,10:00 AM,8:00 PM,10:00,regular
+7,19-09-2026,Saturday,holiday,Hitarth Shah,,,,holiday
+7,20-09-2026,Sunday,holiday,Hitarth Shah,,,,holiday
+8,05-08-2026,Wednesday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,06-08-2026,Thursday,working day,Vedant Trivedi,10:15 AM,7:15 PM,09:00,regular
+8,07-08-2026,Friday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,08-08-2026,Saturday,holiday,Vedant Trivedi,,,,holiday
+8,09-08-2026,Sunday,holiday,Vedant Trivedi,,,,holiday
+8,10-08-2026,Monday,working day,Vedant Trivedi,10:00 AM,3:00 PM,05:00,half
+8,11-08-2026,Tuesday,working day,Vedant Trivedi,10:20 AM,7:20 PM,09:00,regular
+8,12-08-2026,Wednesday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,13-08-2026,Thursday,working day,Vedant Trivedi,10:45 AM,7:45 PM,09:00,late
+8,14-08-2026,Friday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,15-08-2026,Saturday,holiday,Vedant Trivedi,,,,holiday
+8,16-08-2026,Sunday,holiday,Vedant Trivedi,,,,holiday
+8,17-08-2026,Monday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,18-08-2026,Tuesday,working day,Vedant Trivedi,11:00 AM,8:00 PM,09:00,late
+8,19-08-2026,Wednesday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,20-08-2026,Thursday,working day,Vedant Trivedi,10:00 AM,3:00 PM,05:00,half
+8,21-08-2026,Friday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,22-08-2026,Saturday,holiday,Vedant Trivedi,,,,holiday
+8,23-08-2026,Sunday,holiday,Vedant Trivedi,,,,holiday
+8,24-08-2026,Monday,working day,Vedant Trivedi,,,,leave
+8,25-08-2026,Tuesday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,26-08-2026,Wednesday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,27-08-2026,Thursday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,28-08-2026,Friday,working day,Vedant Trivedi,10:15 AM,3:15 PM,05:00,half
+8,29-08-2026,Saturday,holiday,Vedant Trivedi,,,,holiday
+8,30-08-2026,Sunday,holiday,Vedant Trivedi,,,,holiday
+8,31-08-2026,Monday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,01-09-2026,Tuesday,working day,Vedant Trivedi,10:00 AM,3:00 PM,05:00,half
+8,02-09-2026,Wednesday,working day,Vedant Trivedi,10:00 AM,7:00 PM,09:00,regular
+8,03-09-2026,Thursday,working day,Vedant Trivedi,,,,leave
+9,12-08-2026,Wednesday,working day,Prisha Vyas,10:15 AM,8:15 PM,10:00,regular
+9,13-08-2026,Thursday,working day,Prisha Vyas,10:00 AM,7:00 PM,09:00,regular
+9,14-08-2026,Friday,working day,Prisha Vyas,,,,leave
+9,15-08-2026,Saturday,holiday,Prisha Vyas,,,,holiday
+9,16-08-2026,Sunday,holiday,Prisha Vyas,,,,holiday
+9,17-08-2026,Monday,working day,Prisha Vyas,10:00 AM,6:00 PM,08:00,early
+9,18-08-2026,Tuesday,working day,Prisha Vyas,10:00 AM,3:00 PM,05:00,half
+9,19-08-2026,Wednesday,working day,Prisha Vyas,10:00 AM,3:00 PM,05:00,half
+9,20-08-2026,Thursday,working day,Prisha Vyas,10:00 AM,7:00 PM,09:00,regular
+9,21-08-2026,Friday,working day,Prisha Vyas,10:30 AM,7:30 PM,09:00,regular
+9,22-08-2026,Saturday,holiday,Prisha Vyas,,,,holiday
+9,23-08-2026,Sunday,holiday,Prisha Vyas,,,,holiday
+9,24-08-2026,Monday,working day,Prisha Vyas,10:15 AM,6:15 PM,08:00,early
+9,25-08-2026,Tuesday,working day,Prisha Vyas,10:45 AM,6:45 PM,08:00,late
+9,26-08-2026,Wednesday,working day,Prisha Vyas,11:00 AM,8:00 PM,09:00,late
+9,27-08-2026,Thursday,working day,Prisha Vyas,11:00 AM,8:00 PM,09:00,late
+9,28-08-2026,Friday,working day,Prisha Vyas,10:20 AM,7:20 PM,09:00,regular
+9,29-08-2026,Saturday,holiday,Prisha Vyas,,,,holiday
+9,30-08-2026,Sunday,holiday,Prisha Vyas,,,,holiday
+9,31-08-2026,Monday,working day,Prisha Vyas,10:00 AM,7:00 PM,09:00,regular
+9,01-09-2026,Tuesday,working day,Prisha Vyas,11:00 AM,8:00 PM,09:00,late
+9,02-09-2026,Wednesday,working day,Prisha Vyas,10:00 AM,3:00 PM,05:00,half
+9,03-09-2026,Thursday,working day,Prisha Vyas,,,,leave
+9,04-09-2026,Friday,working day,Prisha Vyas,10:00 AM,7:00 PM,09:00,regular
+9,05-09-2026,Saturday,holiday,Prisha Vyas,,,,holiday
+9,06-09-2026,Sunday,holiday,Prisha Vyas,,,,holiday
+9,07-09-2026,Monday,working day,Prisha Vyas,10:00 AM,7:00 PM,09:00,regular
+9,08-09-2026,Tuesday,working day,Prisha Vyas,10:45 AM,8:45 PM,10:00,late
+9,09-09-2026,Wednesday,working day,Prisha Vyas,10:15 AM,7:15 PM,09:00,regular
+9,10-09-2026,Thursday,working day,Prisha Vyas,10:20 AM,7:20 PM,09:00,regular
+10,26-08-2026,Wednesday,working day,Rushabh Modi,10:20 AM,3:20 PM,05:00,half
+10,27-08-2026,Thursday,working day,Rushabh Modi,10:00 AM,7:00 PM,09:00,regular
+10,28-08-2026,Friday,working day,Rushabh Modi,10:00 AM,7:00 PM,09:00,regular
+10,29-08-2026,Saturday,holiday,Rushabh Modi,,,,holiday
+10,30-08-2026,Sunday,holiday,Rushabh Modi,,,,holiday
+10,31-08-2026,Monday,working day,Rushabh Modi,11:00 AM,8:00 PM,09:00,late
+10,01-09-2026,Tuesday,working day,Rushabh Modi,10:00 AM,3:00 PM,05:00,half
+10,02-09-2026,Wednesday,working day,Rushabh Modi,10:00 AM,7:00 PM,09:00,regular
+10,03-09-2026,Thursday,working day,Rushabh Modi,10:45 AM,6:45 PM,08:00,late
+10,04-09-2026,Friday,working day,Rushabh Modi,10:00 AM,8:00 PM,10:00,regular
+10,05-09-2026,Saturday,holiday,Rushabh Modi,,,,holiday
+10,06-09-2026,Sunday,holiday,Rushabh Modi,,,,holiday
+10,07-09-2026,Monday,working day,Rushabh Modi,10:00 AM,7:00 PM,09:00,regular
+10,08-09-2026,Tuesday,working day,Rushabh Modi,10:15 AM,3:15 PM,05:00,half
+10,09-09-2026,Wednesday,working day,Rushabh Modi,10:45 AM,3:45 PM,05:00,half
+10,10-09-2026,Thursday,working day,Rushabh Modi,10:15 AM,8:15 PM,10:00,regular
+10,11-09-2026,Friday,working day,Rushabh Modi,10:15 AM,7:15 PM,09:00,regular
+10,12-09-2026,Saturday,holiday,Rushabh Modi,,,,holiday
+10,13-09-2026,Sunday,holiday,Rushabh Modi,,,,holiday
+10,14-09-2026,Monday,working day,Rushabh Modi,10:20 AM,6:20 PM,08:00,early
+10,15-09-2026,Tuesday,working day,Rushabh Modi,10:15 AM,3:15 PM,05:00,half
+10,16-09-2026,Wednesday,working day,Rushabh Modi,10:20 AM,7:20 PM,09:00,regular
+10,17-09-2026,Thursday,working day,Rushabh Modi,10:00 AM,7:00 PM,09:00,regular
+10,18-09-2026,Friday,working day,Rushabh Modi,10:00 AM,3:00 PM,05:00,half
+10,19-09-2026,Saturday,holiday,Rushabh Modi,,,,holiday
+10,20-09-2026,Sunday,holiday,Rushabh Modi,,,,holiday
+10,21-09-2026,Monday,working day,Rushabh Modi,11:00 AM,8:00 PM,09:00,late
+10,22-09-2026,Tuesday,working day,Rushabh Modi,10:00 AM,7:00 PM,09:00,regular
+10,23-09-2026,Wednesday,working day,Rushabh Modi,10:00 AM,7:00 PM,09:00,regular
+10,24-09-2026,Thursday,working day,Rushabh Modi,10:00 AM,7:00 PM,09:00,regular
+11,06-08-2026,Thursday,working day,Harsh Shah,10:00 AM,3:00 PM,05:00,half
+11,07-08-2026,Friday,working day,Harsh Shah,,,,leave
+11,08-08-2026,Saturday,holiday,Harsh Shah,,,,holiday
+11,09-08-2026,Sunday,holiday,Harsh Shah,,,,holiday
+11,10-08-2026,Monday,working day,Harsh Shah,10:15 AM,7:15 PM,09:00,regular
+11,11-08-2026,Tuesday,working day,Harsh Shah,10:00 AM,7:00 PM,09:00,regular
+11,12-08-2026,Wednesday,working day,Harsh Shah,10:00 AM,3:00 PM,05:00,half
+11,13-08-2026,Thursday,working day,Harsh Shah,10:00 AM,6:00 PM,08:00,early
+11,14-08-2026,Friday,working day,Harsh Shah,11:00 AM,4:00 PM,05:00,half
+11,15-08-2026,Saturday,holiday,Harsh Shah,,,,holiday
+11,16-08-2026,Sunday,holiday,Harsh Shah,,,,holiday
+11,17-08-2026,Monday,working day,Harsh Shah,10:00 AM,7:00 PM,09:00,regular
+11,18-08-2026,Tuesday,working day,Harsh Shah,10:30 AM,3:30 PM,05:00,half
+11,19-08-2026,Wednesday,working day,Harsh Shah,10:00 AM,7:00 PM,09:00,regular
+11,20-08-2026,Thursday,working day,Harsh Shah,10:00 AM,7:00 PM,09:00,regular
+11,21-08-2026,Friday,working day,Harsh Shah,10:00 AM,8:00 PM,10:00,regular
+11,22-08-2026,Saturday,holiday,Harsh Shah,,,,holiday
+11,23-08-2026,Sunday,holiday,Harsh Shah,,,,holiday
+11,24-08-2026,Monday,working day,Harsh Shah,10:20 AM,7:20 PM,09:00,regular
+11,25-08-2026,Tuesday,working day,Harsh Shah,10:00 AM,7:00 PM,09:00,regular
+11,26-08-2026,Wednesday,working day,Harsh Shah,10:45 AM,7:45 PM,09:00,late
+11,27-08-2026,Thursday,working day,Harsh Shah,10:20 AM,7:20 PM,09:00,regular
+11,28-08-2026,Friday,working day,Harsh Shah,10:00 AM,7:00 PM,09:00,regular
+11,29-08-2026,Saturday,holiday,Harsh Shah,,,,holiday
+11,30-08-2026,Sunday,holiday,Harsh Shah,,,,holiday
+11,31-08-2026,Monday,working day,Harsh Shah,10:30 AM,7:30 PM,09:00,regular
+11,01-09-2026,Tuesday,working day,Harsh Shah,10:00 AM,7:00 PM,09:00,regular
+11,02-09-2026,Wednesday,working day,Harsh Shah,10:20 AM,6:20 PM,08:00,early
+11,03-09-2026,Thursday,working day,Harsh Shah,10:00 AM,8:00 PM,10:00,regular
+11,04-09-2026,Friday,working day,Harsh Shah,11:00 AM,8:00 PM,09:00,late
+12,04-08-2026,Tuesday,working day,Kalp Patel,10:45 AM,8:45 PM,10:00,late
+12,05-08-2026,Wednesday,working day,Kalp Patel,10:45 AM,7:45 PM,09:00,late
+12,06-08-2026,Thursday,working day,Kalp Patel,10:00 AM,3:00 PM,05:00,half
+12,07-08-2026,Friday,working day,Kalp Patel,10:15 AM,7:15 PM,09:00,regular
+12,08-08-2026,Saturday,holiday,Kalp Patel,,,,holiday
+12,09-08-2026,Sunday,holiday,Kalp Patel,,,,holiday
+12,10-08-2026,Monday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,11-08-2026,Tuesday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,12-08-2026,Wednesday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,13-08-2026,Thursday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,14-08-2026,Friday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,15-08-2026,Saturday,holiday,Kalp Patel,,,,holiday
+12,16-08-2026,Sunday,holiday,Kalp Patel,,,,holiday
+12,17-08-2026,Monday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,18-08-2026,Tuesday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,19-08-2026,Wednesday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,20-08-2026,Thursday,working day,Kalp Patel,10:00 AM,6:00 PM,08:00,early
+12,21-08-2026,Friday,working day,Kalp Patel,10:45 AM,7:45 PM,09:00,late
+12,22-08-2026,Saturday,holiday,Kalp Patel,,,,holiday
+12,23-08-2026,Sunday,holiday,Kalp Patel,,,,holiday
+12,24-08-2026,Monday,working day,Kalp Patel,10:00 AM,8:00 PM,10:00,regular
+12,25-08-2026,Tuesday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,26-08-2026,Wednesday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,27-08-2026,Thursday,working day,Kalp Patel,10:00 AM,6:00 PM,08:00,early
+12,28-08-2026,Friday,working day,Kalp Patel,10:15 AM,7:15 PM,09:00,regular
+12,29-08-2026,Saturday,holiday,Kalp Patel,,,,holiday
+12,30-08-2026,Sunday,holiday,Kalp Patel,,,,holiday
+12,31-08-2026,Monday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+12,01-09-2026,Tuesday,working day,Kalp Patel,10:20 AM,7:20 PM,09:00,regular
+12,02-09-2026,Wednesday,working day,Kalp Patel,10:00 AM,7:00 PM,09:00,regular
+13,04-08-2026,Tuesday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,05-08-2026,Wednesday,working day,Vraj Patel,11:00 AM,8:00 PM,09:00,late
+13,06-08-2026,Thursday,working day,Vraj Patel,10:15 AM,3:15 PM,05:00,half
+13,07-08-2026,Friday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,08-08-2026,Saturday,holiday,Vraj Patel,,,,holiday
+13,09-08-2026,Sunday,holiday,Vraj Patel,,,,holiday
+13,10-08-2026,Monday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,11-08-2026,Tuesday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,12-08-2026,Wednesday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,13-08-2026,Thursday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,14-08-2026,Friday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,15-08-2026,Saturday,holiday,Vraj Patel,,,,holiday
+13,16-08-2026,Sunday,holiday,Vraj Patel,,,,holiday
+13,17-08-2026,Monday,working day,Vraj Patel,10:30 AM,3:30 PM,05:00,half
+13,18-08-2026,Tuesday,working day,Vraj Patel,10:15 AM,8:15 PM,10:00,regular
+13,19-08-2026,Wednesday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,20-08-2026,Thursday,working day,Vraj Patel,10:00 AM,3:00 PM,05:00,half
+13,21-08-2026,Friday,working day,Vraj Patel,10:45 AM,7:45 PM,09:00,late
+13,22-08-2026,Saturday,holiday,Vraj Patel,,,,holiday
+13,23-08-2026,Sunday,holiday,Vraj Patel,,,,holiday
+13,24-08-2026,Monday,working day,Vraj Patel,,,,leave
+13,25-08-2026,Tuesday,working day,Vraj Patel,10:45 AM,7:45 PM,09:00,late
+13,26-08-2026,Wednesday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,27-08-2026,Thursday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+13,28-08-2026,Friday,working day,Vraj Patel,11:00 AM,8:00 PM,09:00,late
+13,29-08-2026,Saturday,holiday,Vraj Patel,,,,holiday
+13,30-08-2026,Sunday,holiday,Vraj Patel,,,,holiday
+13,31-08-2026,Monday,working day,Vraj Patel,10:00 AM,3:00 PM,05:00,half
+13,01-09-2026,Tuesday,working day,Vraj Patel,10:20 AM,3:20 PM,05:00,half
+13,02-09-2026,Wednesday,working day,Vraj Patel,10:00 AM,7:00 PM,09:00,regular
+14,04-08-2026,Tuesday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+14,05-08-2026,Wednesday,working day,Dev Modi,10:00 AM,6:00 PM,08:00,early
+14,06-08-2026,Thursday,working day,Dev Modi,10:30 AM,6:30 PM,08:00,early
+14,07-08-2026,Friday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+14,08-08-2026,Saturday,holiday,Dev Modi,,,,holiday
+14,09-08-2026,Sunday,holiday,Dev Modi,,,,holiday
+14,10-08-2026,Monday,working day,Dev Modi,,,,leave
+14,11-08-2026,Tuesday,working day,Dev Modi,10:00 AM,3:00 PM,05:00,half
+14,12-08-2026,Wednesday,working day,Dev Modi,,,,leave
+14,13-08-2026,Thursday,working day,Dev Modi,10:00 AM,3:00 PM,05:00,half
+14,14-08-2026,Friday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+14,15-08-2026,Saturday,holiday,Dev Modi,,,,holiday
+14,16-08-2026,Sunday,holiday,Dev Modi,,,,holiday
+14,17-08-2026,Monday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+14,18-08-2026,Tuesday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+14,19-08-2026,Wednesday,working day,Dev Modi,10:20 AM,7:20 PM,09:00,regular
+14,20-08-2026,Thursday,working day,Dev Modi,,,,leave
+14,21-08-2026,Friday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+14,22-08-2026,Saturday,holiday,Dev Modi,,,,holiday
+14,23-08-2026,Sunday,holiday,Dev Modi,,,,holiday
+14,24-08-2026,Monday,working day,Dev Modi,10:15 AM,6:15 PM,08:00,early
+14,25-08-2026,Tuesday,working day,Dev Modi,,,,leave
+14,26-08-2026,Wednesday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+14,27-08-2026,Thursday,working day,Dev Modi,10:20 AM,7:20 PM,09:00,regular
+14,28-08-2026,Friday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+14,29-08-2026,Saturday,holiday,Dev Modi,,,,holiday
+14,30-08-2026,Sunday,holiday,Dev Modi,,,,holiday
+14,31-08-2026,Monday,working day,Dev Modi,10:00 AM,3:00 PM,05:00,half
+14,01-09-2026,Tuesday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+14,02-09-2026,Wednesday,working day,Dev Modi,10:00 AM,7:00 PM,09:00,regular
+15,10-08-2026,Monday,working day,Het Shah,10:15 AM,3:15 PM,05:00,half
+15,11-08-2026,Tuesday,working day,Het Shah,10:45 AM,7:45 PM,09:00,late
+15,12-08-2026,Wednesday,working day,Het Shah,,,,leave
+15,13-08-2026,Thursday,working day,Het Shah,,,,leave
+15,14-08-2026,Friday,working day,Het Shah,10:00 AM,8:00 PM,10:00,regular
+15,15-08-2026,Saturday,holiday,Het Shah,,,,holiday
+15,16-08-2026,Sunday,holiday,Het Shah,,,,holiday
+15,17-08-2026,Monday,working day,Het Shah,10:30 AM,7:30 PM,09:00,regular
+15,18-08-2026,Tuesday,working day,Het Shah,10:30 AM,3:30 PM,05:00,half
+15,19-08-2026,Wednesday,working day,Het Shah,11:00 AM,8:00 PM,09:00,late
+15,20-08-2026,Thursday,working day,Het Shah,10:00 AM,7:00 PM,09:00,regular
+15,21-08-2026,Friday,working day,Het Shah,10:45 AM,7:45 PM,09:00,late
+15,22-08-2026,Saturday,holiday,Het Shah,,,,holiday
+15,23-08-2026,Sunday,holiday,Het Shah,,,,holiday
+15,24-08-2026,Monday,working day,Het Shah,10:00 AM,6:00 PM,08:00,early
+15,25-08-2026,Tuesday,working day,Het Shah,10:15 AM,7:15 PM,09:00,regular
+15,26-08-2026,Wednesday,working day,Het Shah,10:00 AM,7:00 PM,09:00,regular
+15,27-08-2026,Thursday,working day,Het Shah,10:00 AM,7:00 PM,09:00,regular
+15,28-08-2026,Friday,working day,Het Shah,11:00 AM,8:00 PM,09:00,late
+15,29-08-2026,Saturday,holiday,Het Shah,,,,holiday
+15,30-08-2026,Sunday,holiday,Het Shah,,,,holiday
+15,31-08-2026,Monday,working day,Het Shah,10:00 AM,7:00 PM,09:00,regular
+15,01-09-2026,Tuesday,working day,Het Shah,10:00 AM,7:00 PM,09:00,regular
+15,02-09-2026,Wednesday,working day,Het Shah,10:30 AM,3:30 PM,05:00,half
+15,03-09-2026,Thursday,working day,Het Shah,10:00 AM,8:00 PM,10:00,regular
+15,04-09-2026,Friday,working day,Het Shah,10:00 AM,7:00 PM,09:00,regular
+15,05-09-2026,Saturday,holiday,Het Shah,,,,holiday
+15,06-09-2026,Sunday,holiday,Het Shah,,,,holiday
+15,07-09-2026,Monday,working day,Het Shah,10:00 AM,7:00 PM,09:00,regular
+15,08-09-2026,Tuesday,working day,Het Shah,10:00 AM,8:00 PM,10:00,regular
+16,19-08-2026,Wednesday,working day,Mitanshu Sharma,10:00 AM,7:00 PM,09:00,regular
+16,20-08-2026,Thursday,working day,Mitanshu Sharma,10:15 AM,6:15 PM,08:00,early
+16,21-08-2026,Friday,working day,Mitanshu Sharma,10:15 AM,7:15 PM,09:00,regular
+16,22-08-2026,Saturday,holiday,Mitanshu Sharma,,,,holiday
+16,23-08-2026,Sunday,holiday,Mitanshu Sharma,,,,holiday
+16,24-08-2026,Monday,working day,Mitanshu Sharma,11:00 AM,8:00 PM,09:00,late
+16,25-08-2026,Tuesday,working day,Mitanshu Sharma,10:00 AM,7:00 PM,09:00,regular
+16,26-08-2026,Wednesday,working day,Mitanshu Sharma,10:00 AM,7:00 PM,09:00,regular
+16,27-08-2026,Thursday,working day,Mitanshu Sharma,11:00 AM,9:00 PM,10:00,late
+16,28-08-2026,Friday,working day,Mitanshu Sharma,10:00 AM,8:00 PM,10:00,regular
+16,29-08-2026,Saturday,holiday,Mitanshu Sharma,,,,holiday
+16,30-08-2026,Sunday,holiday,Mitanshu Sharma,,,,holiday
+16,31-08-2026,Monday,working day,Mitanshu Sharma,10:30 AM,6:30 PM,08:00,early
+16,01-09-2026,Tuesday,working day,Mitanshu Sharma,10:00 AM,7:00 PM,09:00,regular
+16,02-09-2026,Wednesday,working day,Mitanshu Sharma,10:00 AM,7:00 PM,09:00,regular
+16,03-09-2026,Thursday,working day,Mitanshu Sharma,10:15 AM,7:15 PM,09:00,regular
+16,04-09-2026,Friday,working day,Mitanshu Sharma,10:15 AM,7:15 PM,09:00,regular
+16,05-09-2026,Saturday,holiday,Mitanshu Sharma,,,,holiday
+16,06-09-2026,Sunday,holiday,Mitanshu Sharma,,,,holiday
+16,07-09-2026,Monday,working day,Mitanshu Sharma,10:15 AM,7:15 PM,09:00,regular
+16,08-09-2026,Tuesday,working day,Mitanshu Sharma,,,,leave
+16,09-09-2026,Wednesday,working day,Mitanshu Sharma,10:00 AM,3:00 PM,05:00,half
+16,10-09-2026,Thursday,working day,Mitanshu Sharma,10:30 AM,6:30 PM,08:00,early
+16,11-09-2026,Friday,working day,Mitanshu Sharma,10:20 AM,7:20 PM,09:00,regular
+16,12-09-2026,Saturday,holiday,Mitanshu Sharma,,,,holiday
+16,13-09-2026,Sunday,holiday,Mitanshu Sharma,,,,holiday
+16,14-09-2026,Monday,working day,Mitanshu Sharma,10:00 AM,7:00 PM,09:00,regular
+16,15-09-2026,Tuesday,working day,Mitanshu Sharma,10:00 AM,6:00 PM,08:00,early
+16,16-09-2026,Wednesday,working day,Mitanshu Sharma,10:30 AM,7:30 PM,09:00,regular
+16,17-09-2026,Thursday,working day,Mitanshu Sharma,,,,leave
+17,27-08-2026,Thursday,working day,Kaivant Shah,10:00 AM,8:00 PM,10:00,regular
+17,28-08-2026,Friday,working day,Kaivant Shah,10:30 AM,7:30 PM,09:00,regular
+17,29-08-2026,Saturday,holiday,Kaivant Shah,,,,holiday
+17,30-08-2026,Sunday,holiday,Kaivant Shah,,,,holiday
+17,31-08-2026,Monday,working day,Kaivant Shah,10:00 AM,7:00 PM,09:00,regular
+17,01-09-2026,Tuesday,working day,Kaivant Shah,10:00 AM,6:00 PM,08:00,early
+17,02-09-2026,Wednesday,working day,Kaivant Shah,10:00 AM,3:00 PM,05:00,half
+17,03-09-2026,Thursday,working day,Kaivant Shah,10:15 AM,3:15 PM,05:00,half
+17,04-09-2026,Friday,working day,Kaivant Shah,10:00 AM,7:00 PM,09:00,regular
+17,05-09-2026,Saturday,holiday,Kaivant Shah,,,,holiday
+17,06-09-2026,Sunday,holiday,Kaivant Shah,,,,holiday
+17,07-09-2026,Monday,working day,Kaivant Shah,10:20 AM,3:20 PM,05:00,half
+17,08-09-2026,Tuesday,working day,Kaivant Shah,11:00 AM,9:00 PM,10:00,late
+17,09-09-2026,Wednesday,working day,Kaivant Shah,10:45 AM,7:45 PM,09:00,late
+17,10-09-2026,Thursday,working day,Kaivant Shah,10:00 AM,7:00 PM,09:00,regular
+17,11-09-2026,Friday,working day,Kaivant Shah,10:00 AM,7:00 PM,09:00,regular
+17,12-09-2026,Saturday,holiday,Kaivant Shah,,,,holiday
+17,13-09-2026,Sunday,holiday,Kaivant Shah,,,,holiday
+17,14-09-2026,Monday,working day,Kaivant Shah,10:00 AM,7:00 PM,09:00,regular
+17,15-09-2026,Tuesday,working day,Kaivant Shah,10:00 AM,8:00 PM,10:00,regular
+17,16-09-2026,Wednesday,working day,Kaivant Shah,,,,leave
+17,17-09-2026,Thursday,working day,Kaivant Shah,10:00 AM,6:00 PM,08:00,early
+17,18-09-2026,Friday,working day,Kaivant Shah,10:30 AM,7:30 PM,09:00,regular
+17,19-09-2026,Saturday,holiday,Kaivant Shah,,,,holiday
+17,20-09-2026,Sunday,holiday,Kaivant Shah,,,,holiday
+17,21-09-2026,Monday,working day,Kaivant Shah,10:00 AM,6:00 PM,08:00,early
+17,22-09-2026,Tuesday,working day,Kaivant Shah,,,,leave
+17,23-09-2026,Wednesday,working day,Kaivant Shah,10:00 AM,3:00 PM,05:00,half
+17,24-09-2026,Thursday,working day,Kaivant Shah,10:00 AM,7:00 PM,09:00,regular
+17,25-09-2026,Friday,working day,Kaivant Shah,10:00 AM,8:00 PM,10:00,regular

@@ -1,0 +1,118 @@
+{% extends "admin_home.html" %}
+
+{% block main %}
+<h1 id="emp_head"> Attendance </h1>
+
+<div class="table-wrapper">
+    <table class="table table-bordered" id="emp-table">
+        <tr class="table-primary">
+            <td> Employee ID </td>
+            <td> Name </td>
+            <td> Required Working Hours </td>
+            <td> Total Hours Worked </td>
+            <td> Detailed Attendance </td>
+        </tr>
+        {% for employee in employees_data %}
+        <tr>
+            <td> {{ employee['emp_id'] }}</td>
+            <td> {{ employee['emp_name'] }}</td>
+            <td> {{ employee['days']*9 }} </td>
+            <td> {{ employee['total_work_hours'] }}</td>
+            <td class="center">
+                <button class="btn btn-primary view-attendance-btn" data-id="{{ employee['emp_id'] }}" data-name="{{ employee['emp_name'] }}">
+                   <i class="fa-solid fa-calendar-check"></i> View Attendance
+                </button>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div class="center-tag py-3">
+<form action="/admin/upload_attendance" method="POST" enctype="multipart/form-data">
+    <input type="file" name="attendance_file" accept=".csv">
+    <button class="btn btn-primary view-attendance-btn" type="submit"> 
+    <i class="fa-solid fa-file-import"></i>
+    Import Attendance 
+    </button>
+</form>
+</div>
+
+<div id="attendanceOverlay">
+
+    <div id="attendanceCard">
+
+        <span id="closeCard">&times;</span>
+
+        <h2 id="employeeName"></h2>
+
+        <table class="table table-bordered">
+
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>In</th>
+                    <th>Out</th>
+                    <th>Hours</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="attendanceBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script>
+const overlay = document.getElementById("attendanceOverlay");
+const tbody = document.getElementById("attendanceBody");
+const employeeName = document.getElementById("employeeName");
+
+document.querySelectorAll(".view-attendance-btn").forEach(button => {
+
+    button.addEventListener("click", async function(){
+
+        const empId = this.dataset.id;
+        const empName = this.dataset.name;
+
+        employeeName.textContent = empName;
+
+        tbody.innerHTML = "";
+
+        const response = await fetch(`/admin/view_attendance/${empId}`);
+
+        const data = await response.json();
+
+        data.forEach(row=>{
+
+            tbody.innerHTML += `
+                <tr>
+                    <td>${row.date}</td>
+                    <td>${row.in_time}</td>
+                    <td>${row.out_time}</td>
+                    <td>${row.wrk_hrs}</td>
+                    <td>${row.status}</td>
+                </tr>
+            `;
+
+        });
+
+        overlay.style.display="flex";
+
+    });
+
+});
+
+document.getElementById("closeCard").onclick=function(){
+
+    overlay.style.display="none";
+
+}
+</script>
+
+{% endblock %}

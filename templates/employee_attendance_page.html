@@ -1,0 +1,70 @@
+{% extends "employee_home.html" %}
+
+{% block main %}
+<div class="title py-4">
+    <h1> Attendance Log </h1>
+</div>
+
+<div class="attendance_table center">
+    <table class="table table-bordered">
+        <thead>
+            <tr class="table-info">
+                <th scope="col"> Date </th>
+                <th scope="col"> Week Day </th>
+                <th> Day Type </th>
+                <th> In time </th>
+                <th> Out time </th>
+                <th> Total Working Hours </th>
+                <th> Status </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for attendance in attendance_data %}
+            <tr>
+                <td> {{ attendance['date'] }} </td>
+                <td> {{ attendance['week_day'] }} </td>
+                <td> {{ attendance['day_type'] }} </td>
+                <td> {{ attendance['in_time'] }} </td>
+                <td> {{ attendance['out_time'] }} </td>
+                <td> {{ attendance['wrk_hrs'] }} </td>
+                <td> {{ attendance['status'] }} </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<br>
+
+<div class="total_attendance_data center">
+<table class="table table-bordered">
+    <tr colspan="2" class="table-success">
+        <td colspan="2" style="text-align: center;"> Attendance Summary </td>
+    </tr>
+    <tr>
+        <th> Total working days this month: </th>
+        <td> {{ total_working_days[0]['total_days'] }} </td>
+    </tr>
+    <tr>
+        <th>  No. of full days attended: </th>
+        <td> {{ regular_days[0]['regular_days'] }} </td>
+    </tr>
+    <tr>
+        <th> No. of Late days: </th>
+        <td> {{ late_days[0]['late_days'] }} </td>
+    </tr>
+    <tr>
+        <th> No. of half leaves: </th>
+        <td> {{ half_days[0]['half_days'] }} </td>
+    </tr>
+    <tr> 
+        <th> Total Leaves: </th>
+        <td> {{ leaves }} </td>
+    </tr>
+    <tr class="table-info">
+        <td> Total Attendance: </td>
+        <td> {{ total_days }} </td>
+    </tr>
+    
+</div>
+{% endblock %}

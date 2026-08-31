@@ -1,0 +1,32 @@
+{% extends "employee_home.html" %}
+
+{% block main %}
+<div class="title py-4">
+<h1> Projects </h1>
+</div>
+
+<div class="emp_project_body center">
+    <table class="table table-bordered">
+        <thead class="table-primary">
+            <th> Project ID </th>
+            <th> Project Name </th>
+            <th> Project Description </th>
+            <th> Project Stage </th>
+            <th> Update Project Stage </th>
+        </thead>
+        <tbody>
+            {% for project in project_data %}
+            <tr>
+                <td> {{ project['project_id'] }} </td>
+                <td> {{ project['project_name'] }}</td>
+                <td> {{ project['project_description'] }}  </td>
+                <td> {{ project['status'] }} </td>
+                <td> <a id="update-project-btn" href="/user/projects/update_stage"><button class="button btn btn-primary"> <i class="fa-solid fa-bars-progress"></i> Update Project Stage </a></button></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
+

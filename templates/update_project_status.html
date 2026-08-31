@@ -1,0 +1,45 @@
+{% extends "employee_home.html" %}
+
+{% block main %}
+    <h1 class="title py-4">
+        Update Project Stage
+    </h1>
+    <div class="container d-flex justify-content-center align-items-center">
+    <div class="card p-4" style="max-width: 550px; width: 100%; border-radius: 20px;">
+
+        <form action="/user/projects/update_stage" method="post">
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Select Project</label>
+                <select class="form-select" name="project_name">
+                    {% for project in project_data %}
+                        <option value="{{ project['project_name'] }}">
+                            {{ project['project_name'] }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Project Status</label>
+                <select class="form-select" name="status">
+                    <option value="planning">📋 Planning</option>
+                    <option value="in-progress">🚀 In Progress</option>
+                    <option value="completed">✅ Completed</option>
+                </select>
+            </div>
+            
+            <div class="mb-4">
+                <label class="form-label fw-bold">Remarks</label>
+                <textarea class="form-control" name="remarks" rows="5" placeholder="Describe the progress.."></textarea>
+            </div>
+
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg" type="submit"> Update Status </button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+{% endblock %}

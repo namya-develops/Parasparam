@@ -1,0 +1,6 @@
+Flask
+Flask-session
+sqlite3
+cs50
+Werkzeug
+requests

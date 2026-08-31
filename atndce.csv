@@ -1,0 +1,13 @@
+﻿emp_id,date,week_day,day_type,emp_name,in_time,out_time,wrk_hrs,status
+8,01-07-2026,Wednesday,working day,Vaishali Shah,10:00 AM,7:00 PM,9:00 AM,regular
+9,01-07-2026,Wednesday,working day,crshah,10:00 AM,3:00 PM,5:00 AM,regular
+10,01-07-2026,Wednesday,working day,Vaishali Chirag Shah,10:00 AM,3:00 PM,5:00 AM,half
+11,01-07-2026,Wednesday,working day,Namya Chirag Shah,10:00 AM,7:00 PM,9:00 AM,regular
+8,02-07-2026,Thursday,working day,Vaishali Shah,10:00 AM,8:00 PM,10:00 AM,regular
+9,02-07-2026,Thursday,working day,crshah,10:00 AM,7:00 PM,9:00 AM,regular
+10,02-07-2026,Thursday,working day,Vaishali Chirag Shah,10:00 AM,7:00 PM,9:00 AM,regular
+11,02-07-2026,Thursday,working day,Namya Chirag Shah,10:00 AM,6:00 PM,8:00 AM,early
+8,03-07-2026,Friday,working day,Vaishali Shah,11:00 AM,7:00 PM,8:00 AM,late
+9,03-07-2026,Friday,working day,crshah,10:00 AM,7:00 PM,9:00 AM,regular
+10,03-07-2026,Friday,working day,Vaishali Chirag Shah,10:00 AM,7:00 PM,9:00 AM,regular
+11,03-07-2026,Friday,working day,Namya Chirag Shah,10:00 AM,7:00 PM,9:00 AM,regular

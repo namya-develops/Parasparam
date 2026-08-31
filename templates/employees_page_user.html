@@ -1,0 +1,31 @@
+{% extends "employee_home.html" %}
+
+{% block main %}
+<h1 id="emp_head"> People </h1>
+
+<div class="table-wrapper">
+    <table class="table table-bordered center-tag" id="emp-table">
+        <tr class="table-primary fw-bold">
+            <td> Employee ID </td>
+            <td> Name </td>
+            <td> Designation </td>
+            <td> Joining Date </td>
+            <td> Actions </td>
+        </tr>
+        {% for employee in employees_data %}
+        <tr>
+            <td> {{ employee['emp_id'] }}</td>
+            <td> {{ employee['emp_name'] }}</td>
+            <td> {{ employee['designation'] }} </td>
+            <td> {{ employee['joining_date'] }} </td>
+            <td>
+                <button class="btn btn-primary btn-lg">
+                    <a id="view-emp-btn" class="link" href="/view_employee/{{ employee['emp_id'] }}"> <i class="fa-solid fa-circle-info"></i> Details </a>
+                </button>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}

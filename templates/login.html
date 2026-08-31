@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="card-container">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Employee Login</h5>
+            <div class="card-form">
+                <form action = "/user/login" method="post">
+                <div class="username">
+                    <label for="input_username">Employee ID</label>
+                    <input name = "emp_id" type="text" autocomplete="off" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                </div>
+                <div class="password">
+                    <label for="inputPassword5">Password</label>
+                    <input name = "emp_password" type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" autocomplete="off">
+                </div>
+                <div class="card-links">
+                    <button type="submit" class="btn btn-dark"> Login </button>
+                    <a href="/user/reset_password" class="card-link" id="reset_link" autocomplete="off"> Reset Password </a>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="admin_login">
+        If looking for Admin Login, <a id="admin-link" href="/admin/login"> Click here</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: 'Inter';
+}
+
+.brand-logo-main {
+    font-family: 'Instrument Serif';
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home_nav {
+    padding: 1rem;
+}
+
+.nav-flex {
+    justify-content: center;
+}
+
+.logout-flex {
+    display: flex;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#register_employee {
+    justify-content: center;
+}
+
+#top-nav {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    height: 32rem;
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+#reset {
+    height: 34rem;
+}
+
+.card-body {
+    padding: 50px;
+    font-size: 1rem;
+}
+
+.card-form {
+    margin-top: 3.5rem;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-links {
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+#logout-link {
+    color: white;
+}
+
+.password {
+    margin-top: 2rem;
+}
+
+#reset_link {
+    margin-top: 2rem;
+}
+
+#admin_login {
+    margin-top: 3rem;
+}
+
+.center {
+    justify-content: center;
+}
+
+.nav-links {
+    flex: 1;
+    /* Take all available space */
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    /* Space between links */
+}
+
+#top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 36px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.left,
+.center,
+.right {
+    flex: 1;
+}
+
+.left {
+    display: flex;
+    padding-left: 2.5rem;
+    justify-content: flex-start;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 14px;
+    padding: 10px 22px;
+}
+
+.nav-links {
+    display: inline-flex;
+    gap: 6px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    padding: 12px 22px;
+    border-radius: 10px;
+    transition: .25s;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+.nav-links a:hover {
+    background: #0055ff50;
+    color: #08142e;
+}
+
+.nav-links a.active {
+    background: #005eff;
+    color: white;
+}
+
+/* Employee Profile Page */
+.welcome {
+    justify-content: center;
+    text-align: center;}
+
+#emp_head {
+    margin: 2rem;
+    text-align: center;
+}
+
+#emp-table {
+    width: 80%;
+    margin-left: 3rem;
+    margin: 0 auto;
+}
+
+#reg-btn {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.frm-table {
+    display: flex;
+    justify-content: center;
+}
+
+.reg-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;  
+}
+
+#reg-frm-table {
+    margin: 0 auto;
+}
+
+#reg-emp-frm h1 {
+    text-align: center;
+}
+
+#view_attendance_link {
+    color: white;
+}
+
+#att {
+    justify-content: center;
+    text-align: center;
+}
+
+#attendanceOverlay{
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(15,23,42,.35);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+}
+
+#attendanceCard{
+    position: relative;
+    width: min(1000px,90vw);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 35px;
+    border-radius: 28px;
+    /* White glass */
+    background: rgba(255,255,255,.82);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
+    border: 1px solid rgba(255,255,255,.6);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.15);
+    color: #222;
+}
+#attendanceCard table{
+    background: transparent;
+    margin-top: 25px;
+}
+
+#attendanceCard thead{
+    background: transparent;
+}
+
+#attendanceCard th{
+    color: #222;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(0,0,0,.08);
+}
+
+#attendanceCard td{
+    background: transparent;
+    border-color: rgba(0,0,0,.06);
+}
+
+#attendanceCard tbody tr:hover{
+    background: rgba(255,255,255,.35);
+}
+
+#attendanceOverlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#attendanceCard{
+    width:900px;
+    max-height:80vh;
+    overflow:auto;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    position:relative;
+}
+
+#closeCard{
+    position:absolute;
+    right:20px;
+    top:10px;
+    font-size:35px;
+    cursor:pointer;
+}
+
+.center-tag, .title {
+    justify-content: center;
+    text-align: center;
+}
+
+.attendance_table {
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.total_attendance_data {
+    width: 20%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+select {
+    height: 50px;
+}
+
+#admin-link {
+    color: blue;
+}
+
+#employee_salary_table {
+    justify-content: center;
+    display: block;
+    margin-left:37rem;
+    text-align: center;
+}
+
+.employee_salary_table_container {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.emp_project_body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+a {
+    color: blue;
+}
+
+.link {
+    color: white;
+}
+
+.emp-home-content {
+    display: flex;
+    gap: 2.5rem;
+    margin-left: 0.3rem;
+}
+
+.emp-me-cards {
+    box-shadow: 10px 10px 5px inset rgba(0, 0, 0, 0.2) ;
+    height: 28rem;
+}
+
+#update-project-btn {
+    color: white;
+}
+
+.leave-card {
+    height: 23rem;
+}
+

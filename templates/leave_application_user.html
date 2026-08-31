@@ -1,0 +1,77 @@
+{% extends "employee_home.html" %}
+
+{% block main %}
+
+<h1 class="title py-3"> Apply for a Leave </h1>
+<div class="container d-flex justify-content-center mt-5">
+    <div class="card leave-card p-4" style="width: 600px; border-radius: 15px;">
+
+        <form action="/user/leave-application" method="POST">
+
+            <table class="table table-borderless align-middle">
+                <tr>
+                    <th style="width: 35%;">From Date</th>
+                    <td>
+                        <input class="form-control" type="date" name="leave-from-date" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>To Date</th>
+                    <td>
+                        <input class="form-control" type="date" name="leave-to-date" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Reason</th>
+                    <td>
+                        <textarea class="form-control"
+                                  name="leave-reason"
+                                  rows="4"
+                                  placeholder="Purpose of Leave"
+                                  required></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="text-center pt-3">
+                        <button class="btn btn-primary btn-lg px-5" type="submit">
+                            Apply Leave
+                        </button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+
+    </div>
+</div>
+
+<h1 class="title py-3"> Leave Applications </h1>
+
+<div class="emp_project_body center">
+    <table class="table table-bordered">
+        <thead class="table-primary">
+            <th> Leave ID </th>
+            <th> From Date </th>
+            <th> To Date </th>
+            <th> Reason </th>
+            <th> Leave Status </th>
+        </thead>
+        <tbody>
+            {% for leave in leaves %}
+            <tr>
+                <td> {{ leave['leave_id'] }} </td>
+                <td> {{ leave['from_date'] }}  </td>
+                <td> {{ leave['to_date'] }}</td>
+                <td> {{ leave['reason'] }}  </td>
+                <td> {{ leave['leave_status'] }} </td>
+            
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
