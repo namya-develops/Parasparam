@@ -1,6 +1,6 @@
-Flask
-Flask-session
-sqlite3
-cs50
-Werkzeug
-requests
+Flask>=3.0.0
+Flask-Session>=0.8.0
+cs50>=9.0.0
+Werkzeug>=3.0.0
+requests>=2.30.0
+gunicorn>=21.0.0

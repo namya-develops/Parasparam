@@ -9,13 +9,13 @@ from helpers import admin_login_required, employee_login_required
 import csv
 app = Flask(__name__)
 
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY", "parasparam-cs50x-final-project-secret-key")
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 db = SQL("sqlite:///hrems.db")
 
-employees_data = db.execute("SELECT * FROM emp_data1")
 
 @app.after_request
 def after_request(response):
@@ -237,7 +237,7 @@ def approve_leave(leave_id):
     """,
     emp_id,
     "Leave Approved",
-    "Your leave request for date has been approved.",
+    "Your leave request has been approved.",
     "leave",
     datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     )
@@ -342,8 +342,6 @@ def view_adm_attendance():
     employees_data = db.execute("SELECT COUNT(date) AS days, emp_id, emp_name, SUM(wrk_hrs) AS total_work_hours FROM attendance2 GROUP BY emp_name ORDER BY emp_id")
     return render_template("admin_attendance.html", employees_data = employees_data)
 
-import csv
-
 @app.route("/admin/upload_attendance", methods=["POST"])
 @admin_login_required
 def upload_attendance():
@@ -441,22 +439,26 @@ def projects_fun():
     )
 
 @app.route("/admin/salary")
+@admin_login_required
 def salary_admin_page():
     employees_data = db.execute("SELECT * FROM emp_data1")
     total_salary = db.execute("SELECT SUM(ctc_salary) AS ts FROM emp_data1")
     return render_template("employee_salary_page_admin.html", employees_data = employees_data, total_salary=total_salary)
 
 @app.route("/user/salary")
+@employee_login_required
 def salary_user_page():
     emp_data = db.execute("SELECT ctc_salary FROM emp_data1 WHERE emp_id = ?", session["user_id"])
     return render_template("employee_salary.html", emp_data = emp_data)
 
 @app.route("/view_employee/<int:emp_id>")
+@employee_login_required
 def view_emp(emp_id):
     emp_data = db.execute("SELECT * FROM emp_data1 WHERE emp_id = ?", emp_id)
     return render_template("view_employee_adm.html", emp_data = emp_data)
 
 @app.route("/user/attendance")
+@employee_login_required
 def view_user_attendance():
     attendance_data = db.execute("SELECT date, week_day, day_type, in_time, out_time, wrk_hrs, status FROM attendance2 WHERE emp_id = ?", session["user_id"])
     total_working_days = db.execute("SELECT COUNT(*) AS total_days FROM attendance2 WHERE day_type = ? AND emp_id = ?", "working day", session["user_id"])
@@ -467,7 +469,6 @@ def view_user_attendance():
     total_days = regular_days[0]['regular_days'] + half_days[0]['half_days'] + late_days[0]['late_days']
     return render_template("employee_attendance_page.html", attendance_data = attendance_data, total_working_days = total_working_days, regular_days = regular_days, half_days = half_days, late_days = late_days, leaves = leaves, total_days = total_days)
     
-
 @app.route("/admin/view_employee/<int:emp_id>")
 @admin_login_required
 def view_emp_admin(emp_id):
@@ -502,3 +503,7 @@ def deregister_emp(emp_id):
 def deregister_adm(adm_id):
     db.execute("DELETE FROM adm_data1 WHERE adm_id = ?", adm_id)
     return redirect("/admin/actions")
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
